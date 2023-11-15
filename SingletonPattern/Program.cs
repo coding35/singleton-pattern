@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using SingletonPattern.Singleton;
+﻿using SingletonPattern.Singleton;
 
 // eager initialization
 var test = EagerSingleton.GetInstance();
@@ -34,3 +33,32 @@ var test7 = EnumSingleton.Instance;
 test7.Print();
 var test8 = EnumSingleton.Instance;
 test8.Print();
+
+
+// **** V2 **** //
+// V2 is a more modern approach to the singleton pattern.
+
+var test9 = BasicSingleton.Instance;
+BasicSingleton.Print();
+var test10 = BasicSingleton.Instance;
+BasicSingleton.Print();
+
+var test11 = BasicSingletonThreadSafe.Instance;
+BasicSingletonThreadSafe.Print();
+var test12 = BasicSingletonThreadSafe.Instance;
+BasicSingletonThreadSafe.Print();
+
+var test13 = BasicSingletonThreadSafeWithBetterLocking.Instance;
+BasicSingletonThreadSafeWithBetterLocking.Print();
+var test14 = BasicSingletonThreadSafeWithBetterLocking.Instance;
+BasicSingletonThreadSafeWithBetterLocking.Print();
+
+var test15 = BasicSingletonTheadSafeStaticConstructor.Instance;
+BasicSingletonTheadSafeStaticConstructor.Print();
+var test16 = BasicSingletonTheadSafeStaticConstructor.Instance;
+BasicSingletonTheadSafeStaticConstructor.Print();
+
+var test17 = LazyOfTSingleton.Instance;
+LazyOfTSingleton.Print();
+var test18 = LazyOfTSingleton.Instance;
+LazyOfTSingleton.Print();
